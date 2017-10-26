@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="tests.sampoorna_sitelogin">
+        <methods>
+          <include name="invalid_user_invalid_pass"/>
+          <include name="valid_user_valid_pass"/>
+          <include name="valid_user_invalid_pass"/>
+          <include name="invalid_user_valid_pass"/>
+          <include name="gmail_valid_login"/>
+        </methods>
+      </class> <!-- tests.sampoorna_sitelogin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

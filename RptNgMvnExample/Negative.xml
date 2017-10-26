@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Negative Test CASE Suite">
+	<parameter name="browser" value="opera"/>
+  <test name="Testing in Opera">
+  
+  <groups>
+  	<run>
+  		<!-- <include name="Negative"/> -->
+  		<exclude name="Positive"/>
+  	</run>
+  </groups>
+    <classes>
+      <class name="tests.sampoorna_sitelogin"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

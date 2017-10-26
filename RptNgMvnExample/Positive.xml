@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Positive Test CASE Suite">
+
+	<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+	<parameter name="browser" value="chrome"/>
+  <test name="Testing in Chrome">
+  <groups>
+  	<run>
+  		<!-- <include name="Positive"/> -->
+  		<exclude name="Negative"/>
+  	</run>
+  </groups>
+    <classes>
+      <class name="tests.sampoorna_sitelogin"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <suite-files>
+	  	<suite-file path="Negative.xml"/>
+  	</suite-files>
+  
+</suite> <!-- Suite -->
+

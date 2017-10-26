@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="5" failed="0" total="5" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="113" started-at="2017-10-26T08:58:56Z" finished-at="2017-10-26T08:58:56Z">
+    <groups>
+      <group name="Negative">
+        <method signature="sampoorna_sitelogin.invalid_user_invalid_pass(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="invalid_user_invalid_pass" class="tests.sampoorna_sitelogin"/>
+        <method signature="sampoorna_sitelogin.invalid_user_valid_pass(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="invalid_user_valid_pass" class="tests.sampoorna_sitelogin"/>
+        <method signature="sampoorna_sitelogin.valid_user_invalid_pass(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="valid_user_invalid_pass" class="tests.sampoorna_sitelogin"/>
+      </group> <!-- Negative -->
+      <group name="Positive">
+        <method signature="sampoorna_sitelogin.gmail_valid_login(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="gmail_valid_login" class="tests.sampoorna_sitelogin"/>
+        <method signature="sampoorna_sitelogin.valid_user_valid_pass(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="valid_user_valid_pass" class="tests.sampoorna_sitelogin"/>
+      </group> <!-- Positive -->
+    </groups>
+    <test name="Default test" duration-ms="113" started-at="2017-10-26T08:58:56Z" finished-at="2017-10-26T08:58:56Z">
+      <class name="tests.sampoorna_sitelogin">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="setup" is-config="true" duration-ms="0" started-at="2017-10-26T14:28:56Z" finished-at="2017-10-26T14:28:56Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method setup but has not been marked @Optional or defined
+in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1039101257\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method setup but has not been marked @Optional or defined
+in C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1039101257\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="gmail_valid_login(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="gmail_valid_login" duration-ms="16" started-at="2017-10-26T14:28:56Z" data-provider="testdata" finished-at="2017-10-26T14:28:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohitnegi548]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[krt@123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmail_valid_login -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="teardown" is-config="true" duration-ms="0" started-at="2017-10-26T14:28:56Z" finished-at="2017-10-26T14:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="invalid_user_invalid_pass(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="invalid_user_invalid_pass" duration-ms="2" started-at="2017-10-26T14:28:56Z" data-provider="testdata" finished-at="2017-10-26T14:28:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohit.negi548@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[krt#1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_user_invalid_pass -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="teardown" is-config="true" duration-ms="0" started-at="2017-10-26T14:28:56Z" finished-at="2017-10-26T14:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="invalid_user_valid_pass(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="invalid_user_valid_pass" duration-ms="3" started-at="2017-10-26T14:28:56Z" data-provider="testdata" finished-at="2017-10-26T14:28:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohit.negi548@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rohitnegi548]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_user_valid_pass -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="teardown" is-config="true" duration-ms="0" started-at="2017-10-26T14:28:56Z" finished-at="2017-10-26T14:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="valid_user_invalid_pass(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="valid_user_invalid_pass" duration-ms="3" started-at="2017-10-26T14:28:56Z" data-provider="testdata" finished-at="2017-10-26T14:28:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohitnegi548@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[krt#1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_user_invalid_pass -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="teardown" is-config="true" duration-ms="0" started-at="2017-10-26T14:28:56Z" finished-at="2017-10-26T14:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="valid_user_valid_pass(java.lang.String, java.lang.String)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="valid_user_valid_pass" duration-ms="2" started-at="2017-10-26T14:28:56Z" data-provider="testdata" finished-at="2017-10-26T14:28:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohitnegi548@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rohitnegi548]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_user_valid_pass -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="teardown" is-config="true" duration-ms="0" started-at="2017-10-26T14:28:56Z" finished-at="2017-10-26T14:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="onsuitend()[pri:0, instance:tests.sampoorna_sitelogin@4edc67]" name="onsuitend" is-config="true" duration-ms="0" started-at="2017-10-26T14:28:57Z" finished-at="2017-10-26T14:28:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onsuitend -->
+      </class> <!-- tests.sampoorna_sitelogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
